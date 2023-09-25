@@ -149,6 +149,9 @@
                 },
                 {
                     "$ref": "nvidia.json#/$defs/NvidiaMctpVdm"
+                },
+                {
+                    "$ref": "legacy.json#/$defs/MCTPEndpoint"
                 }
             ]
         },
