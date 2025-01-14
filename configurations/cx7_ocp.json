@@ -7,6 +7,14 @@
             "Type": "EEPROM"
         },
         {
+            "Address": ["0x32"],
+            "Bus": "$bus",
+            "Class": "I2C",
+            "EndpointId": "$bus % 24 + 90",
+            "Name": "NIC",
+            "Type": "MCTPEndpoint"
+        },
+        {
             "Address": "0x1f",
             "Bus": "$bus",
             "Labels": [
