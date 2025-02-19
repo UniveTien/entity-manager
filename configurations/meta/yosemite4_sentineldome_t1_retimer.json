@@ -10,11 +10,18 @@
                 "$bus % 16 * 5"
             ],
             "Bus": "$bus / 4 - 4",
-            "Class": "I3C",
-            "IANA": "0015A000",
             "Name": "BIC",
             "StaticEndpointID": "$bus % 15 * 10",
             "Type": "MCTPI3CTarget"
+        },
+        {
+            "Name": "BIC",
+            "RanOver": "MCTPI3CTarget",
+            "FirmwareInfo": {
+                "VendorIANA": 40981,
+                "CompatibleHardware": "com.meta.Hardware.ASPEED_AST1030_BIC"
+            },
+            "Type": "PLDMDevice"
         },
         {
             "CheckHysteresisWithSetpoint": true,

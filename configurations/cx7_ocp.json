@@ -7,12 +7,20 @@
             "Type": "EEPROM"
         },
         {
-            "Address": ["0x32"],
+            "Address": "0x32",
             "Bus": "$bus",
-            "Class": "I2C",
-            "EndpointId": "$bus % 24 + 90",
+            "StaticEndpointID": "$bus % 24 + 90",
             "Name": "NIC",
-            "Type": "MCTPEndpoint"
+            "Type": "MCTPI2CTarget"
+        },
+        {
+            "Name": "NIC",
+            "RanOver": "MCTPI2CTarget",
+            "FirmwareInfo": {
+                "VendorIANA": 5703,
+                "CompatibleHardware": "com.meta.Hardware.CX7_OCP_NIC"
+            },
+            "Type": "PLDMDevice"
         },
         {
             "Address": "0x1f",

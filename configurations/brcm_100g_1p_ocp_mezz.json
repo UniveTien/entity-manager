@@ -7,12 +7,20 @@
             "Type": "EEPROM"
         },
         {
-            "Address": ["0x32"],
+            "Address": "0x32",
             "Bus": "$bus",
-            "Class": "I2C",
-            "EndpointId": "$bus % 24 + 90",
+            "StaticEndpointID": "$bus % 24 + 90",
             "Name": "NIC",
-            "Type": "MCTPEndpoint"
+            "Type": "MCTPI2CTarget"
+        },
+        {
+            "Name": "NIC",
+            "RanOver": "MCTPI2CTarget",
+            "FirmwareInfo": {
+                "VendorIANA": 4413,
+                "CompatibleHardware": "com.meta.Hardware.BRCM_100G_1P_OCP_MEZZ_NIC"
+            },
+            "Type": "PLDMDevice"
         },
         {
             "Address": "0x1f",
