@@ -15,15 +15,6 @@
             "Type": "MCTPI3CTarget"
         },
         {
-            "Name": "BIC",
-            "RanOver": "MCTPI3CTarget",
-            "FirmwareInfo": {
-                "VendorIANA": 40981,
-                "CompatibleHardware": "com.meta.Hardware.ASPEED_AST1030_BIC"
-            },
-            "Type": "PLDMDevice"
-        },
-        {
             "Address": [
                 "7",
                 "236",

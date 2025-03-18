@@ -14,15 +14,6 @@
             "Type": "MCTPI2CTarget"
         },
         {
-            "Name": "NIC",
-            "RanOver": "MCTPI2CTarget",
-            "FirmwareInfo": {
-                "VendorIANA": 4413,
-                "CompatibleHardware": "com.meta.Hardware.BRCM_200G_1P_OCP_MEZZ_NIC"
-            },
-            "Type": "PLDMDevice"
-        },
-        {
             "Address": "0x1f",
             "Bus": "$bus",
             "Labels": [
