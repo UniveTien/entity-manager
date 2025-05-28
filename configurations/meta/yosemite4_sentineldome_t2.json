@@ -17,6 +17,21 @@
             "Type": "MCTPEndpoint"
         },
         {
+            "Address": [
+                "7",
+                "236",
+                "128",
+                "1",
+                "0",
+                "$bus % 16 * 5"
+            ],
+            "Bus": "$bus / 4 - 4",
+            "Class": "I3C",
+            "StaticEndpointID": "$bus % 15 * 10",
+            "Name": "BIC",
+            "Type": "MCTPI3CTarget"
+        },
+        {
             "CheckHysteresisWithSetpoint": true,
             "Class": "temp",
             "DCoefficient": 0.0,
