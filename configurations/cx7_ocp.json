@@ -7,6 +7,13 @@
             "Type": "EEPROM"
         },
         {
+            "Address": ["0x32"],
+            "Bus": "$bus",
+            "Name": "NIC",
+            "StaticEndpointID": "$bus % 24 + 90",
+            "Type": "MCTPI2CTarget"
+        },
+        {
             "Address": "0x1f",
             "Bus": "$bus",
             "Labels": [
